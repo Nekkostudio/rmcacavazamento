@@ -386,15 +386,6 @@ ul{ margin: 0; padding: 0; list-style: none; }
   box-shadow: 0 14px 30px oklch(10% 0.04 258 / 0.28);
 }
 .hero-actions .btn-primary:hover{ background: oklch(96% 0.01 258); }
-.hero-note{
-  margin-top: 1.6rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.86rem;
-  color: oklch(96% 0.01 250 / 0.7);
-}
-.hero-note svg{ width: 26px; height: 26px; color: var(--accent-400); flex: none; }
 
 @media (min-width: 768px){
   .hero{
@@ -413,7 +404,6 @@ ul{ margin: 0; padding: 0; list-style: none; }
   .hero-sub{ max-width: 62ch; margin-top: 1.6rem; }
   .hero-actions{ margin-top: 2.6rem; gap: 1.1rem; }
   .hero-actions .btn{ max-width: 280px; }
-  .hero-note{ margin-top: 2rem; }
 }
 
 /* ============================================================
@@ -495,8 +485,6 @@ ul{ margin: 0; padding: 0; list-style: none; }
 }
 .icon-badge svg{ width: 24px; height: 24px; stroke-width: 1.8; }
 .icon-badge.on-blue{ background: oklch(100% 0 0 / 0.12); color: var(--accent-400); }
-.icon-badge.circle{ border-radius: 50%; }
-
 /* ============================================================
    Seções — genérico
    ============================================================ */
@@ -558,25 +546,6 @@ ul{ margin: 0; padding: 0; list-style: none; }
   display: block;
 }
 
-.services-secondary{
-  margin-top: 2.75rem;
-  padding-top: 2.25rem;
-  border-top: 1px solid var(--border);
-}
-.services-secondary-head{
-  display: flex;
-  align-items: center;
-  gap: 0.85rem;
-  margin-bottom: 1.1rem;
-}
-.services-secondary-head h3{
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--blue-900);
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-.pill-list{ display: flex; flex-direction: column; gap: 0.65rem; }
 .pill{
   display: flex;
   align-items: center;
@@ -684,13 +653,13 @@ ul{ margin: 0; padding: 0; list-style: none; }
 .step h3{ font-size: 1.02rem; color: var(--blue-900); margin-bottom: 0.4rem; }
 .step p{ font-size: 0.9rem; color: var(--muted); line-height: 1.55; }
 @media (min-width: 1024px){
-  .steps{ grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+  .steps{ grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 }
 
 /* ============================================================
    Foco piscinas
    ============================================================ */
-.pool-section{ background: var(--white); }
+.pool-section{ background: var(--white); padding-block: var(--space-section-sm); }
 .pool-grid{
   display: grid;
   gap: 1.5rem;
@@ -807,49 +776,6 @@ ul{ margin: 0; padding: 0; list-style: none; }
   align-items: center;
 }
 .coverage-grid > *{ min-width: 0; }
-.coverage-map{
-  position: relative;
-  border-radius: var(--radius-lg);
-  aspect-ratio: 4/3;
-  background: var(--blue-50);
-  border: 1px solid var(--border);
-  overflow: hidden;
-}
-.coverage-map iframe{ position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.coverage-map-link{
-  position: absolute;
-  left: 0.6rem;
-  top: 0.6rem;
-  z-index: 1;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  min-height: 44px;
-  padding: 0.55rem 0.85rem;
-  background: var(--white);
-  color: var(--blue-900);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  font-size: 0.82rem;
-  font-weight: 600;
-  text-decoration: none;
-  box-shadow: 0 2px 8px oklch(19% 0.07 258 / 0.12);
-}
-.coverage-map-link:hover{ color: var(--accent-600); }
-.coverage-list{ margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.6rem; }
-.coverage-badge{
-  display: flex;
-  align-items: flex-start;
-  gap: 0.85rem;
-  padding: 1.1rem 1.25rem;
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  margin-bottom: 1.25rem;
-}
-.coverage-badge strong{ display: block; font-family: var(--font-display); color: var(--blue-900); font-size: 0.98rem; }
-.coverage-badge span{ font-size: 0.86rem; color: var(--muted); }
-@media (min-width: 1024px){ .coverage-grid{ grid-template-columns: 1fr 1fr; } }
 
 /* ============================================================
    CTA final
@@ -909,7 +835,7 @@ ul{ margin: 0; padding: 0; list-style: none; }
 .footer-list a:hover{ color: var(--accent-600); }
 .footer-contact-item{ display: flex; align-items: flex-start; gap: 0.65rem; font-size: 0.92rem; }
 .footer-contact-item svg{ width: 22px; height: 22px; color: var(--accent-600); flex: none; margin-top: 0.15rem; }
-.footer-contact-item svg:first-child{ width: 13px; height: 13px; margin-top: 0.3rem; }
+.footer-contact-item svg.wa-icon{ width: 13px; height: 13px; margin-top: 0.3rem; }
 .footer-bottom{
   margin-top: 3rem;
   padding-top: 1.75rem;
