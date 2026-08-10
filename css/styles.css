@@ -392,11 +392,10 @@ ul{ margin: 0; padding: 0; list-style: none; }
   .hero{
     background-image:
       radial-gradient(1100px 620px at 84% -8%, oklch(55% 0.17 252 / 0.45), transparent 60%),
-      linear-gradient(90deg, oklch(19% 0.07 258 / 0.96) 0%, oklch(19% 0.07 258 / 0.9) 38%, oklch(24% 0.09 258 / 0.55) 62%, oklch(30% 0.12 258 / 0.2) 100%),
-      url("../ms7rnfcf-magnific_melhore-a-qualidade-da-im_swsxVDUl8e-_1_.png");
-    background-size: auto, auto, cover;
-    background-position: center, center, center 25%;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+      linear-gradient(180deg, oklch(19% 0.07 258) 0%, oklch(24% 0.09 258) 100%);
+    background-size: auto, auto;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
   }
 }
 
@@ -591,8 +590,15 @@ ul{ margin: 0; padding: 0; list-style: none; }
 }
 
 @media (min-width: 1024px){
-  .carousel-slide{ height: 280px; }
-  .carousel-track{ animation-duration: 34s; }
+  .carousel{
+    width: auto;
+    left: auto;
+    right: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .carousel-slide{ height: 380px; }
+  .carousel-track{ animation-duration: 34s; padding-inline: 0; }
 }
 
 @keyframes carousel-scroll{
