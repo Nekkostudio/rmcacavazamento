@@ -14,7 +14,7 @@ This archive is the source of truth for turning the design into production code.
 - HTML screens detected: 1
 - Stylesheets detected: 1
 - Script/component files detected: 1
-- Supporting assets detected: 96
+- Supporting assets detected: 104
 
 ## Responsive contract
 Validate the implementation across this 2025–2026 viewport matrix:
@@ -168,6 +168,14 @@ For responsive web exports, treat these as a modern breakpoint system for one ad
 - `msdhyfou-image.png`
 - `msdi14c9-image.png`
 - `msdi2j0d-image.png`
+- `msnfy04w-image.png`
+- `msnfzep7-40cadb71-9f23-4206-8d76-8a91820e0b3b.jfif`
+- `msnfzgex-12b6c2e5-748a-4b0b-a602-47a2e8ad3301.jfif`
+- `msnfzhuc-3c03a20c-14ed-4af8-a2aa-938f3ea8a345.jfif`
+- `msnfzj7v-349f1089-5cc1-4af7-a0c4-f9808140f982.jfif`
+- `msnfzlqx-cd60f77f-ea4e-43f5-af97-0c8225aec69d.jfif`
+- `msngf1bv-image.png`
+- `msngl7m8-image.png`
 
 ## Coding checklist for AI tools
 1. Inspect `index.html` and `DESIGN-MANIFEST.json` first and identify reusable components before coding.
