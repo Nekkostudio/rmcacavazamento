@@ -36,7 +36,16 @@
   "url": "https://rmcacavazamento.vercel.app/",
   "telephone": "",
   "priceRange": "$$",
-  "areaServed": "Brasil",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Campinas",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Campinas"},
+    {"@type": "State", "name": "São Paulo"}
+  ],
   "serviceType": ["Detecção de vazamentos", "Caça vazamentos em piscinas", "Caça vazamentos residencial", "Caça vazamentos industrial", "Caça vazamentos em condomínios"],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
